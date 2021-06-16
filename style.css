@@ -1,0 +1,277 @@
+@import "/projects.css";
+@import "/mobile-view.css";
+
+:root {
+    --nav-color: #0F172A;
+    --items-color: #F1F5F9;
+    --items-bg: #334155;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* width: 100vw; */
+}
+
+/* --------------Navbar--------------------------- */
+
+nav {
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: -0.5rem;
+    z-index: 1;
+    width: 100%;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    margin: 0.5rem 0.5rem;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.logo img:hover {
+    box-shadow: 3px 3px 20px var(--items-color);
+}
+
+.nav-items {
+    min-width: 40%;
+}
+
+.nav-items ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-items ul a {
+    text-decoration: none;
+}
+
+.nav-items ul li {
+    color: var(--items-color);
+    /* background-color: var(--items-bg); */
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--nav-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-items ul li:hover {
+    background-color: var(--items-bg);
+}
+
+/* --------------------Hero Section -------------------*/
+
+.hero-image {
+    /* margin-top: 0.5rem; */
+    height: 84vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #0f172ade, #f1f5f97c), url("https://inteng-storage.s3.amazonaws.com/img/iea/nR6bkXZxwo/sizes/software-engineering-skills_resize_md.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+    font-size: 3rem;
+    color: var(--items-color);
+    background-color: #0f172a5e;
+    padding: 1rem;
+    border-radius: 2rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    width: 50vw;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+}
+
+.hero-text span {
+    animation: wave 2s infinite;
+    transform-origin: center;
+    display: inline-block;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+/* -----------main-body------------------------ */
+
+.main-body {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--items-color);
+    margin-top: 1rem;
+}
+
+.parent {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-1:hover {
+    box-shadow: 10px 10px 10px var(--nav-color);
+    transform: translateY(-5px);
+    cursor: not-allowed;
+}
+
+.image-1 {
+    height: 80%;
+    width: 50%;
+    /* background-color: #000; */
+}
+
+.image-1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.my-info {
+    font-size: 2rem;
+    text-align: center;
+    /* background-color: green; */
+    width: 80%;
+    box-shadow: 0px 0px 5px 5px var(--nav-color);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.my-info:hover {
+    border: 2px solid var(--nav-color);
+    transform: translateY(-5px);
+}
+
+.my-info p {
+    font-size: 1.2rem;
+}
+
+.my-info button {
+    background-color: var(--items-bg);
+    font-size: 1.5rem;
+    border: 1px solid var(--nav-color);
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--items-color);
+    width: fit-content;
+}
+
+.my-info button:hover {
+    background-color: var(--items-color);
+    color: var(--nav-color);
+}
+
+/* ------------footer--------------- */
+
+footer {
+    background-color: var(--nav-color);
+    color: var(--items-color);
+}
+
+.footer-title {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.footer-title span {
+    font-size: 2rem;
+    position: absolute;
+    right: 0.5%;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.footer-title span:hover {
+    background-color: #f1f5f965;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-info .card {
+    font-size: 1.7rem;
+    width: 50%;
+}
+
+.contact-info .card p {
+    font-size: 1.3rem;
+}
+
+.contact-info .card ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem;
+}
+
+.contact-info .card ul a {
+    color: var(--items-color);
+}
+
+.contact-info .card ul li {
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.contact-info .card ul li:hover {
+    background-color: #f1f5f965;
+}

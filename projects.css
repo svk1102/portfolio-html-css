@@ -1,0 +1,69 @@
+.image-3 {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(to bottom, var(--nav-color), var(--items-color));
+}
+
+.image-3 img {
+    height: 100%;
+    width: 100%;
+}
+
+hr {
+    width: 80%;
+    justify-content: center;
+    height: 0.2rem;
+    background-color: var(--nav-color);
+    border-radius: 1rem;
+}
+
+.my-projects {
+    background-color: var(--nav-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.project-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 18rem;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 1rem;
+    background-color: var(--items-bg);
+    color: var(--items-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.project-card:hover {
+    transform: scale(1.01);
+    border: 2px solid var(--items-color);
+    box-shadow: 0px 0px 5px 5px var(--items-color);
+}
+
+.project-card:last-child {
+    margin-bottom: 1rem;
+}
+
+.project-card h2 {
+    font-size: 2rem;
+}
+
+.project-card button {
+    background-color: var(--nav-color);
+    color: var(--items-color);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--nav-color);
+    border-radius: 0.5rem;
+    width: 10rem;
+}

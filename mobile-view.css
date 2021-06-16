@@ -1,0 +1,58 @@
+@media(max-width:675px) {
+    nav {
+        position: static !important;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .nav-items ul {
+        display: grid !important;
+        grid-template-columns: repeat(2, 30vw);
+        padding-left: 0rem;
+    }
+
+    .hero-image {
+        height: 130vh !important;
+        display: flex;
+    }
+
+    .hero-text {
+        position: absolute;
+        left: 10% !important;
+        text-align: center;
+        width: 70vw !important;
+    }
+
+    .hero-text span {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .parent {
+        width: 100vw !important;
+    }
+
+    .main-body {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    /* --------------Projects----------------- */
+
+    .project-card {
+        height: fit-content;
+    }
+
+    .project-card button {
+        margin-bottom: 0.5rem;
+    }
+
+}
